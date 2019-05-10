@@ -1,1 +1,5 @@
-**vagrant init ubuntu/trusty64** crates a vagrantfile with config
+- **vagrant init ubuntu/trusty64** crates a vagrantfile with config
+- **vagrant global-status** status and info about all machines
+- **vagrant up ** starts a machine
+- **vagrant halt ** stops the machine
+- **vagrant ssh ** 
