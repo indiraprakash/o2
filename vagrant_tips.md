@@ -1,1 +1,1 @@
-** vagrant init ubuntu/trusty64 ** crates a vagrantfile with config
+**vagrant init ubuntu/trusty64** crates a vagrantfile with config
