@@ -1,6 +1,8 @@
 $install = <<-SCRIPT
 echo I am provisioning...
 date > /etc/vagrant_provisioned_at
+sudo apt-get update
+sudo apt-get install python3 python-virtualenv postgresql -y
 SCRIPT
 
 Vagrant.configure("2") do |config|
