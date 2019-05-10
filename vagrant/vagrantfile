@@ -1,5 +1,10 @@
+$install = <<-SCRIPT
+echo I am provisioning...
+date > /etc/vagrant_provisioned_at
+SCRIPT
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.synced_folder "~/dev/git_proj/github/odoo_dev/vagrant/data/", "/srv/data"
+  config.vm.provision "shell", inline: $install
 end
